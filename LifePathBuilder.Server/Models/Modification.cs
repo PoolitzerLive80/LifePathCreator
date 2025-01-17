@@ -1,6 +1,4 @@
-﻿using static LifePathBuilder.Server.Models.AttributeModification;
-
-namespace LifePathBuilder.Server.Models
+﻿namespace LifePathBuilder.Server.Models
 {
     public class Modification
     {
