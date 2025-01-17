@@ -1,0 +1,6 @@
+@LifePathBuilder.Server_HostAddress = http://localhost:5081
+
+GET {{LifePathBuilder.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
