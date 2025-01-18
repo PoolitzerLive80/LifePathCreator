@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifePathBuilder.Server", "LifePathBuilder.Server\LifePathBuilder.Server.csproj", "{BC476854-DE9C-4507-98AA-B2820E3996EF}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "lifepathbuilder.client", "lifepathbuilder.client\lifepathbuilder.client.esproj", "{FC27B41E-942A-48F1-BA3A-0D69F8E08315}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0ECA5BD0-851B-4AF3-963B-ECB9B1539DE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{FC27B41E-942A-48F1-BA3A-0D69F8E08315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC27B41E-942A-48F1-BA3A-0D69F8E08315}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC27B41E-942A-48F1-BA3A-0D69F8E08315}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0ECA5BD0-851B-4AF3-963B-ECB9B1539DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ECA5BD0-851B-4AF3-963B-ECB9B1539DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ECA5BD0-851B-4AF3-963B-ECB9B1539DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ECA5BD0-851B-4AF3-963B-ECB9B1539DE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

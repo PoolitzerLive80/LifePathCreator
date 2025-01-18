@@ -15,6 +15,45 @@ a,
   padding: 3px;
 }
 
+/* Stil für das gesamte Panel */
+.character-list-panel {
+    background-color: #121212; /* Dunkler Hintergrund */
+    color: #e0e0e0; /* Helles Grau für den Text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sanfter Schatten für Tiefe */
+}
+
+    /* Stil für den Titel */
+    .character-list-panel p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #ffffff; /* Weißer Text für den Titel */
+    }
+
+/* Stil für die Liste der Charaktere */
+.character-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Stil für jedes einzelne Charakterelement */
+.character-item {
+    background-color: #333333; /* Etwas helleres Dunkelgrau für die Items */
+    padding: 10px;
+    border-radius: 5px;
+    color: #e0e0e0; /* Helles Grau für den Text */
+    transition: background-color 0.3s ease;
+}
+
+    /* Hover-Effekt für die Charakter-Items */
+    .character-item:hover {
+        background-color: #555555; /* Helleres Grau beim Hover */
+    }
+
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);

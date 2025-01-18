@@ -1,0 +1,31 @@
+services:
+  lifepathbuilder.server:
+    image: ${DOCKER_REGISTRY-}lifepathbuilderserver
+    build:
+      context: .
+      dockerfile: LifePathBuilder.Server/Dockerfile
+    ports:
+      - "5080:8080"  # Map HTTP port
+      - "5081:8081"  # Map HTTPS port
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080;https://+:8081
+  lifepathbuilder.client:
+    build:
+      context: ./lifepathbuilder.client  # Path to the client application
+    ports:
+      - "53560:53560"  # Expose the client app port
+    environment:
+      - VITE_API_URL=https://lifepathbuilder.server:5081  # Set API URL to backend server
+    command: ["npm", "run", "dev"]  # Run the Vue app in dev mode
+    volumes:
+      - ./client:/app  # Mount the client code into the container for live development
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+ 
+
+
